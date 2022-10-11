@@ -1,11 +1,13 @@
 #include<stdio.h>
-main()
+int main(void)
 {
-    int a,b,c;
-    for(a=1;a<=20;a++)
-      for(b=a;b<=20;b++)
-        for(c=a;c<=20;c++)
-        if(a*a+b*b==c*c)
-        printf( "a=%d\tb=%d\tc=%d\n",a,b,c);
-        return 0;
-}
+	int a[]={1,2,3,4,5};
+	int *p=a;
+	printf("%d,",*p);
+	printf("%d,",*(++p));
+	printf("%d,",(*p)++);
+	printf("%d,",*p--);
+	printf("%d,",--(*p));
+	printf("%d\n",*p);
+	return 0;
+} 
